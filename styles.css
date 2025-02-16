@@ -210,8 +210,9 @@ button {
 }
 @media screen and (max-width: 768px) {
   .course-section-title {
-    margin-bottom: 30px;
     font-size: 48px;
+    max-width: 355px;
+    margin: 0 auto 30px;
   }
 }
 
