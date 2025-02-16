@@ -5,7 +5,8 @@ const backdropDet = document.querySelectorAll(".backdrop-course");
 backdropDet.forEach((backdr) => backdr.classList.add("is-hidden"));
 
 btOpen.forEach((bt) => {
-  bt.addEventListener("click", () => {
+  bt.addEventListener("click", (event) => {
+    event.preventDefault();
     const backdrId = bt.getAttribute("data-backdr");
     const backdr = document.getElementById(backdrId);
     if (backdr) {
@@ -15,7 +16,8 @@ btOpen.forEach((bt) => {
 });
 
 btClose.forEach((bt) => {
-  bt.addEventListener("click", () => {
+  bt.addEventListener("click", (event) => {
+    event.preventDefault();
     bt.closest(".backdrop-course").classList.add("is-hidden");
   });
 });

@@ -321,6 +321,7 @@ button {
 .course-card.backend-short {
   background-color: #19fc34;
 }
+/* background-color: #19fc34; */
 
 .course-card.frontend-short {
   background-color: #ecf114;
@@ -539,9 +540,6 @@ button {
     padding: 16px;
     font-size: 16px;
     width: 350px;
-    /* align-self: center; */
-    /* padding: 16px 108px; */
-    /* margin: 0 167px; */
   }
 }
 
@@ -589,11 +587,9 @@ button {
 @media screen and (max-width: 768px) {
   .details {
     width: 355px;
-    padding: 50px 15px 21px;
-    min-height: 604px;
-    /* align-content: center;
-    justify-content: center; */
-    /* margin: 0 auto; */
+    padding: 30px 15px 15px;
+    max-height: none;
+    height: auto;
   }
 }
 

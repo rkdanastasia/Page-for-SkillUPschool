@@ -4,13 +4,15 @@ const btnSubmit = document.querySelectorAll(".btn-submit");
 const btnClose = document.querySelectorAll(".reg-close");
 
 btnOrder.forEach((btn) => {
-  btn.addEventListener("click", () => {
+  btn.addEventListener("click", (event) => {
+    event.preventDefault();
     backdropOrder.forEach((backdrop) => backdrop.classList.remove("is-hidden"));
   });
 });
 
 btnClose.forEach((btn) => {
-  btn.addEventListener("click", () => {
+  btn.addEventListener("click", (event) => {
+    event.preventDefault();
     backdropOrder.forEach((backdrop) => backdrop.classList.add("is-hidden"));
   });
 });
