@@ -731,7 +731,6 @@ button {
 @media screen and (max-width: 768px) {
   .details-course {
     width: 355px;
-    max-width: none;
     padding: 50px 15px 30px;
   }
 }
